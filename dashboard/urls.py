@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^$', boards_views.home, name='home'),
+    url(r'^boards/(?P<pk>\d+)/$', boards_views.board_topics, name='board_topics'),
 ]
 
 if settings.DEBUG:
